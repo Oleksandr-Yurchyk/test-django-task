@@ -2,7 +2,6 @@ from django.db import models
 
 
 class Menu(models.Model):
-    _id = models.CharField(max_length=10)
     site_name = models.CharField(max_length=20)
     home_page = models.CharField(max_length=20)
     news = models.CharField(max_length=20)
@@ -11,4 +10,4 @@ class Menu(models.Model):
     lang_switch = models.CharField(max_length=20)
 
     def __str__(self):
-        return self._id
+        return self.lang_switch
