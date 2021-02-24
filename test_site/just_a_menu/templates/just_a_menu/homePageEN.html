@@ -1,0 +1,35 @@
+{% extends 'just_a_menu/wrapper.html' %}
+
+{% block title %}
+<title>Home Page</title>
+{% endblock title %}
+
+{% block navbar %}
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <a class="mr-md-auto p-2 text-dark text-monospace" href="#">Test Site</a>
+    <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="#">Home page</a>
+        <a class="p-2 text-dark" href="#">News</a>
+        <a class="p-2 text-dark" href="#">About Us</a>
+        <a class="p-2 text-dark" href="#">Contact Us</a>
+    </nav>
+    <div class="dropdown">
+        <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownLangMenu"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+            Lang
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownLangMenu">
+            <li><a class="dropdown-item" href="/menu/en">English</a></li>
+            <li><a class="dropdown-item" href="/menu/ua">Ukrainian</a></li>
+            <li><a class="dropdown-item" href="/menu/ru">Russian</a></li>
+        </ul>
+    </div>
+    <!--    <a class="btn btn-outline-primary btn-sm" href="/menu/en" role="button">EN</a>-->
+    <!--    <a class="btn btn-outline-primary btn-sm" href="/menu/ua" role="button">UA</a>-->
+    <!--    <a class="btn btn-outline-primary btn-sm" href="/menu/ru" role="button">RU</a>-->
+</div>
+{% endblock navbar %}
+
+{% block content %}
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'just_a_menu/wrapper.html' %}
+
+{% block title %}
+<title>Домашняя страница</title>
+{% endblock title %}
+
+{% block navbar %}
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <a class="mr-md-auto p-2 text-dark text-monospace" href="#">Тестовый сайт</a>
+    <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="#">Домашняя страница</a>
+        <a class="p-2 text-dark" href="#">Новости</a>
+        <a class="p-2 text-dark" href="#">О нас</a>
+        <a class="p-2 text-dark" href="#">Свяжитесь с нами</a>
+    </nav>
+    <div class="dropdown">
+        <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownLangMenu"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+            Язык
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownLangMenu">
+            <li><a class="dropdown-item" href="/menu/en">English</a></li>
+            <li><a class="dropdown-item" href="/menu/ua">Ukrainian</a></li>
+            <li><a class="dropdown-item" href="/menu/ru">Russian</a></li>
+        </ul>
+    </div>
+</div>
+{% endblock navbar %}
+
+{% block content %}
+{% endblock %}
